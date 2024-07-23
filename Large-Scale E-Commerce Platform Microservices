@@ -1,0 +1,70 @@
+Large-Scale E-Commerce Platform Microservices
+Overview
+This project demonstrates the design and implementation of a microservices architecture for a large-scale e-commerce platform. The architecture uses Node.js and Express for building microservices, Docker for containerization, and Kubernetes for orchestration. Each microservice has its own MySQL database instance to ensure data consistency and integrity across the system.
+
+Features
+Microservices Architecture: Separate services for users, products, and orders.
+Database Management: Individual MySQL databases for each microservice.
+Containerization: Docker containers for each microservice.
+Orchestration: Kubernetes for managing and scaling containers.
+Data Consistency: Strategies implemented to maintain data integrity across microservices.
+Integration Testing: Postman test suite for validating interactions between microservices.
+Project Structure
+bash
+Copy code
+/user-service
+  ├── Dockerfile
+  ├── app.js
+  ├── package.json
+  ├── README.md
+  └── /src
+      └── /routes
+
+/product-service
+  ├── Dockerfile
+  ├── app.js
+  ├── package.json
+  ├── README.md
+  └── /src
+      └── /routes
+
+/order-service
+  ├── Dockerfile
+  ├── app.js
+  ├── package.json
+  ├── README.md
+  └── /src
+      └── /routes
+
+/kubernetes
+  ├── deployment.yaml
+  ├── service.yaml
+  └── configmap.yaml
+
+/docker-compose.yml
+Getting Started
+Prerequisites
+Docker
+Kubernetes
+Node.js
+MySQL
+
+API Endpoints
+User Service
+
+GET /users
+POST /users
+PUT /users/:id
+DELETE /users/:id
+Product Service
+
+GET /products
+POST /products
+PUT /products/:id
+DELETE /products/:id
+Order Service
+
+GET /orders
+POST /orders
+PUT /orders/:id
+DELETE /orders/:id
